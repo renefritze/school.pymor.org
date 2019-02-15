@@ -339,13 +339,17 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/css/2019_style/img/header-bg.jpg');
+    background-image: url('{{ site.baseurl }}/css/2019_style/img/header-bg.jpg') ;
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+header:after {
+
 }
 
 header .intro-text {
@@ -363,14 +367,34 @@ header .intro-text .intro-lead-in {
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
-    text-transform: uppercase;
+/*     text-transform: uppercase; */
     font-family: {{ site.data.template.font.primary }};
     font-size: 40px;
     font-weight: 700;
     line-height: 40px;
+
+    color: #white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    background-image: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0));
+
 }
 
-@media(min-width:768px) {    
+header .intro-lead-in{
+
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+}
+
+@media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
         padding-bottom: 200px;
@@ -781,6 +805,7 @@ footer {
     position: absolute;
     right: 0;
     left: 0;
+    width:100%;
 }
 
 footer span.copyright {

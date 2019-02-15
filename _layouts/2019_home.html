@@ -12,21 +12,25 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading">Title<br></div>
-                <div class="intro-lead-in">Date</div>
-                <div class="intro-lead-in">Location</div>
+                <div class="intro-heading">pyMOR School 2019<br></div>
+                <div class="intro-lead-in">October 7-11</div>
+                <div class="intro-lead-in">MPI Magdeburg</div>
                 <a href="#intro" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
         </div>
     </header>
 
     {% include 2019_data/intro.html %}
-    {% include 2019_data/speakers.html %}
-    {% include 2019_data/about.html %}
-    {% include 2019_data/sponsors.html %}
-    {% include 2019_data/contact.html %}
+    {% comment %}
+        {% include 2019_data/speakers.html %}
+        {% include 2019_data/about.html %}
+        {% include 2019_data/sponsors.html %}
+        {% include 2019_data/contact.html %}
+    {% endcomment %}
     {% include 2019_data/footer.html %}
-    {% include 2019_data/speakers_info.html %}
+    {% comment %}
+        {% include 2019_data/speakers_info.html %}
+    {% endcomment %}
     {% include 2019_data/js.html %}
 
     </body>
