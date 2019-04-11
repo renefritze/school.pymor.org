@@ -2,7 +2,7 @@ title: pyMOR School
 description: > # this means to ignore newlines until "baseurl:"
   Your description
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "school.pymor.org" # the base hostname & protocol for your site
+url: "https://school.pymor.org" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
