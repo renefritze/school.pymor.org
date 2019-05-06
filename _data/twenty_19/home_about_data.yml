@@ -1,6 +1,6 @@
 - inverted:
   img: icon-about.jpeg
-  name: Theme, Vision, Mission
+  name: Topic
   info: Read more about model order reduction, pyMOR, and the pyMOR School
   link: /about
 
