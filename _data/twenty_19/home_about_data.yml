@@ -1,7 +1,7 @@
 - inverted:
   img: icon-about.jpeg
-  name: Theme, Vision, Mission
-  info: Read more about our Theme, Vision, and Mission
+  name: Topic
+  info: Read more about model order reduction, pyMOR, and the pyMOR School
   link: /about
 
 - inverted: timeline-inverted
@@ -10,26 +10,26 @@
   info: Check out the agenda
   link: /agenda
 
-- inverted:
-  img: icon-team.jpeg
-  name: Team
-  info: Find out the team members
-  link: /team
+# - inverted:
+#   img: icon-team.jpeg
+#   name: Team
+#   info: Find out the team members
+#   link: /team
 
-- inverted: timeline-inverted
+- inverted:
   img: icon-venue.jpeg
   name: Venue
   info: Learn more about our location
   link: /venue
 
-- inverted:
+- inverted: timeline-inverted
   img: icon-faq.jpeg
   name: FAQs
-  info: Have a Question? Many answers can be found right here in our FAQs
+  info: Have a question? Many answers can be found right here in our FAQs
   link: /faqs
 
-- inverted: timeline-inverted
-  img: booklet-icon.png
-  name: Event Booklet
-  info: View or Download our event booklet
-  link: /booklet
+# - inverted: timeline-inverted
+#   img: booklet-icon.png
+#   name: Event Booklet
+#   info: View or Download our event booklet
+#   link: /booklet
