@@ -7,6 +7,13 @@
   nights). For more details, see the <a href=\"../register\">registration
   page</a>."
 
+- question: "How much do I need to know about model reduction?"
+  answer: "Nothing. Basic knowledge of linear algebra and differential equations
+  is expected."
+
+- question: "Is the pyMOR School targeted at mathematicians or engineers?"
+  answer: "We welcome anyone interested in using model reduction."
+
 - question: "Can I work on my model reduction problem during the School?"
   answer: "Yes, we actually encourage this."
 
