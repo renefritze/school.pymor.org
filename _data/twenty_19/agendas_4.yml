@@ -1,8 +1,8 @@
-- time: 9:00 - 12:00
+- time: 09:00 - 12:30
   info: "Hands-on session"
 
-- time: 12:00 - 13:00
-  info: "Lunch"
+- time: 12:30 - 14:00
+  info: "Lunch break"
 
-- time: 13:00 - 19:00
+- time: 14:00 - 19:00
   info: "Hands-on session"
