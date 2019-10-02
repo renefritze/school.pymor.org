@@ -12,22 +12,14 @@ published: true
     <div class="event black-frame">
         <h1>{{ page.title }}</h1>
         <p>
-            The pyMOR School will take place from Monday noon to Friday noon (October 7-11).
+            The pyMOR School will take place from Monday at 14:00 to Friday at 12:00 (October 7-11).
             Lectures will take place in the seminar room Wiener (V0.05-1) and programming sessions
             in the training room (S0.02).
         </p>
-        <p>There will be lectures on:</p>
-        <ul>
-            <li>pyMOR's design philosophy,</li>
-            <li>reduced basis methods,</li>
-            <li>system-theoretic methods,</li>
-            <li>integration with PDE solver packages,</li>
-        </ul>
         <p>
-            with programming sessions.
-            The timetable will depend on participants' interests expressed in the registration.
+            The timetable is given below.
+            For the practical part, we encourage you to bring your own problem to work on.
         </p>
-        <p>For the practical part, we encourage you to bring your own problem to work on.</p>
         <p>
             Note that we are not planning to give an introduction to Python/NumPy/SciPy, but there
             are plenty of free online resources to learn the basics before the start of the School:
@@ -54,8 +46,7 @@ published: true
                 </ul>
             </li>
         </ul>
-
-        <!--
+        
         <h2>Day 1 - Monday, 7 October 2019</h2>
         <table class="agenda">
             <thead>
@@ -66,10 +57,10 @@ published: true
             </thead>
 
             {% for agenda in site.data.twenty_19.agendas_1 %}
-                <tr>
-                    <td>{{ agenda.time }}</td>
-                    <td>{{ agenda.info }}</td>
-                </tr>
+            <tr>
+                <td>{{ agenda.time }}</td>
+                <td>{{ agenda.info }}</td>
+            </tr>
             {% endfor %}
         </table>
 
@@ -84,10 +75,10 @@ published: true
             </thead>
 
             {% for agenda in site.data.twenty_19.agendas_2 %}
-                <tr>
-                    <td>{{ agenda.time }}</td>
-                    <td>{{ agenda.info }}</td>
-                </tr>
+            <tr>
+                <td>{{ agenda.time }}</td>
+                <td>{{ agenda.info }}</td>
+            </tr>
             {% endfor %}
         </table>
 
@@ -144,5 +135,4 @@ published: true
             </tr>
             {% endfor %}
         </table>
-        -->
     </div>

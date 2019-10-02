@@ -1,5 +1,11 @@
-- time: 9:00 - 12:00
-  info: "Presentations from participants"
+- time: 09:00 - 12:00
+  info: "Interactive session"
 
-- time: 12:00 - 12:15
+- time: 10:30 - 11:00
+  info: "Coffee break"
+
+- time: 11:00 - 12:00
+  info: "Final presentations<br><b>pyMOR School participants</b>"
+
+- time: 12:00 - 12:10
   info: "Closing"

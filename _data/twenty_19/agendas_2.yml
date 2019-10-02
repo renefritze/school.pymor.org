@@ -1,8 +1,20 @@
-- time: 9:00 - 12:00
-  info: "Introduction to system-theoretic methods<br><b>TBA</b>"
+- time: 09:00 - 10:30
+  info: "System-Theoretic Methods (1/2)<br><b>Prof. Dr. Peter Benner</b>"
 
-- time: 12:00 - 13:00
-  info: "Lunch"
+- time: 10:30 - 11:00
+  info: "Coffee break"
 
-- time: 13:00 - 19:00
-  info: "Hands-on session"
+- time: 11:00 - 12:30
+  info: "System-Theoretic Methods (2/2)<br><b>Prof. Dr. Peter Benner</b>"
+
+- time: 12:30 - 14:00
+  info: "Lunch break"
+
+- time: 14:00 - 15:30
+  info: "Reduced Basis Methods (2/2)<br><b>Dr. Stephan Rave</b>"
+
+- time: 15:30 - 16:00
+  info: "Coffee break"
+
+- time: 16:00 - 19:00
+  info: "Interactive session"
