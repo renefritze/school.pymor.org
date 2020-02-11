@@ -1,0 +1,162 @@
+---
+layout: 2019_default
+permalink: /agenda
+title: Agenda
+published: true
+---
+    <!--background color-->
+    <script type="text/javascript">
+        document.write ('<body style="background: Gainsboro; background-attachment: fixed;">')
+    </script>
+
+    <div class="event black-frame">
+        <h1>{{ page.title }}</h1>
+        <p>
+            The pyMOR School will take place from Monday at 14:00 to Friday at 12:00 (October 7-11).
+            Lectures will take place in the seminar room Wiener (V0.05-1) and programming sessions
+            in the training room (S0.02).
+        </p>
+        <p>
+            The timetable is given below.
+            For the practical part, we encourage you to bring your own problem to work on.
+        </p>
+
+        <h2>Day 1 - Monday, 7 October 2019</h2>
+        <table class="agenda">
+            <thead>
+                <tr>
+                    <th class="row-1 agenda-time"><center>Time</center></th>
+                    <th class="row-2 agenda-activity"><center>Activity</center></th>
+                </tr>
+            </thead>
+
+            {% for agenda in site.data.twenty_19.agendas_1 %}
+            <tr>
+                <td>{{ agenda.time }}</td>
+                <td>{{ agenda.info }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <h2>Day 2 - Tuesday, 8 October 2019</h2>
+        <table class="agenda">
+            <thead>
+                <tr>
+                    <th class="row-1 agenda-time"><center>Time</center></th>
+                    <th class="row-2 agenda-activity"><center>Activity</center></th>
+                </tr>
+
+            </thead>
+
+            {% for agenda in site.data.twenty_19.agendas_2 %}
+            <tr>
+                <td>{{ agenda.time }}</td>
+                <td>{{ agenda.info }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <h2>Day 3 - Wednesday, 9 October 2019</h2>
+        <table class="agenda">
+            <thead>
+                <tr>
+                    <th class="row-1 agenda-time"><center>Time</center></th>
+                    <th class="row-2 agenda-activity"><center>Activity</center></th>
+                </tr>
+
+            </thead>
+
+            {% for agenda in site.data.twenty_19.agendas_3 %}
+            <tr>
+                <td>{{ agenda.time }}</td>
+                <td>{{ agenda.info }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <h2>Day 4 - Thursday, 10 October 2019</h2>
+        <table class="agenda">
+            <thead>
+                <tr>
+                    <th class="row-1 agenda-time"><center>Time</center></th>
+                    <th class="row-2 agenda-activity"><center>Activity</center></th>
+                </tr>
+
+            </thead>
+
+            {% for agenda in site.data.twenty_19.agendas_4 %}
+            <tr>
+                <td>{{ agenda.time }}</td>
+                <td>{{ agenda.info }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <h2>Day 5 - Friday, 11 October 2019</h2>
+        <table class="agenda">
+            <thead>
+                <tr>
+                    <th class="row-1 agenda-time"><center>Time</center></th>
+                    <th class="row-2 agenda-activity"><center>Activity</center></th>
+                </tr>
+
+            </thead>
+
+            {% for agenda in site.data.twenty_19.agendas_5 %}
+            <tr>
+                <td>{{ agenda.time }}</td>
+                <td>{{ agenda.info }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <h2>School materials</h2>
+        <ul>
+            <li>
+                <a href="../css/2019_style/files/lecture-MOR.pdf">System-theoretic methods slides</a>
+            </li>
+            <li>
+                <a href="../css/2019_style/files/fritze.bindings.pdf">Integration with PDE solvers slides</a>
+            </li>
+            <li>
+                <a href="../css/2019_style/files/contribution_workflow.pdf">pyMOR contribution workflow slides</a>
+            </li>
+            <li>
+                <a href="../css/2019_style/files/jupyterhub_binderhub.pdf">Jupyter and BinderHub slides</a>
+            </li>
+            <li>
+                <a href="../css/2019_style/files/keil.pymor_for_pde_opt.pdf">PDE-constrained optimization slides</a>
+            </li>
+            <li>
+                <a href="https://zivgitlab.uni-muenster.de/pymor/school-material">Git repository with exercises</a>
+            </li>
+        </ul>
+
+        <h2>Introduction to Python</h2>
+        <p>
+            Note that we are not planning to give an introduction to Python/NumPy/SciPy, but there
+            are plenty of free online resources to learn the basics before the start of the School:
+        </p>
+        <ul>
+            <li>
+                for inexperienced programmers:
+                <ul>
+                    <li><a href="https://link.springer.com/book/10.1007/978-3-319-32428-9">https://link.springer.com/book/10.1007/978-3-319-32428-9</a></li>
+                    <li><a href="https://python.swaroopch.com/">https://python.swaroopch.com/</a></li>
+                    <li><a href="https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners">https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners</a></li>
+                </ul>
+            </li>
+            <li>
+                for more experienced programmers:
+                <ul>
+                    <li><a href="https://docs.python.org/3/tutorial/index.html">https://docs.python.org/3/tutorial/index.html</a></li>
+                    <li><a href="https://www.diveinto.org/python3/">https://www.diveinto.org/python3/</a></li>
+                    <li><a href="https://docs.python-guide.org/">https://docs.python-guide.org/</a></li>
+                    <li><a href="https://docs.scipy.org/doc/numpy/user/quickstart.html">https://docs.scipy.org/doc/numpy/user/quickstart.html</a></li>
+                    <li><a href="https://docs.scipy.org/doc/numpy/user/numpy-for-matlab-users.html">https://docs.scipy.org/doc/numpy/user/numpy-for-matlab-users.html</a></li>
+                    <li><a href="http://hyperpolyglot.org/numerical-analysis">http://hyperpolyglot.org/numerical-analysis</a></li>
+                    <li><a href="https://matplotlib.org/tutorials/index.html">https://matplotlib.org/tutorials/index.html</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
