@@ -6,9 +6,9 @@ color:
   muted: 777
 
 color2020:
-  primary: 009DD1
-  secondary: 7AB51D
-  secondary-dark: 008E96
+  primary: af0078
+  secondary: 009dd1
+  secondary-dark: 0080b3
   muted: 3E3E3B
 
 # Font Families
