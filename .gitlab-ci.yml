@@ -1,0 +1,15 @@
+stages:
+  - deploy
+
+pages:
+    image: jekyll/builder:stable
+    resource_group: pages
+    stage: deploy
+    script:
+        - jekyll build
+        - mv _site public
+    only:
+      - "2020"
+    artifacts:
+        paths:
+            - public
