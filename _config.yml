@@ -6,12 +6,12 @@ url: "https://school.pymor.org" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
-logo: "../css/2020_style/img/icon-large.png"
+logo: "/css/2020_style/img/icon-large.png"
 
 
 google_site_verification: googleXXXXXXXXXXXXXXXX.html
 
-include: ['_2020_pages', '_2019_pages']
+include: ['_2020_pages', 'past/*']
 
 plugins:
   - jekyll-sitemap
