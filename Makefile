@@ -1,6 +1,6 @@
 THIS_DIR = $(patsubst %/,%,$(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
-
-DOCKER=docker run --rm --label=jekyll --volume $(THIS_DIR):/srv/jekyll \
+DOCKER_CMD=$(shell (podman -h && echo podman )|| echo docker )
+DOCKER=$(DOCKER_CMD) run --rm --label=jekyll --volume $(THIS_DIR):/srv/jekyll \
 	  -it -p 127.0.0.1:4000:4000 jekyll/builder:stable
 
 build:
