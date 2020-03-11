@@ -16,6 +16,10 @@ serve: build
 new:
 	$(DOCKER) bundle exec jekyll new /srv/jekyll/site
 
+run: INTERACTIVE=-it
+run:
+	$(DOCKER) bash
+
 install:
 	$(DOCKER) bundle install
 
@@ -23,6 +27,8 @@ gemfile.lock:
 	$(DOCKER) bundle update
 
 check: build
-	$(DOCKER) bundle exec htmlproofer _site --allow-hash-href --url-ignore $(IGNORE_HREFS)
+	$(DOCKER) bundle exec htmlproofer _site \
+		--empty-alt-ignore --allow-hash-href --url-ignore $(IGNORE_HREFS) \
+		--internal_domains "school.pymor.org"
 
 .PHONY: new serve build
