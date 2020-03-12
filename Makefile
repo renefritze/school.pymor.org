@@ -29,6 +29,6 @@ gemfile.lock:
 check: build
 	$(DOCKER) bundle exec htmlproofer _site \
 		--empty-alt-ignore --allow-hash-href --url-ignore $(IGNORE_HREFS) \
-		--internal_domains "school.pymor.org" --file-ignore "/past/"
+		--internal_domains "school.pymor.org" --file-ignore "/past/" --check-html
 
 .PHONY: new serve build
