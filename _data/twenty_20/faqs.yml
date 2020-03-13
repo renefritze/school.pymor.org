@@ -1,11 +1,5 @@
 - question: "How much does participation cost?"
-  answer: "There is no participation fee. Lunches and coffee breaks will be
-  covered."
-
-- question: "Is there anything else for free?"
-  answer: "We can offer a limited number of rooms during the school (four
-  nights). For more details, see the <a href=\"register.html\">registration
-  page</a> (<em>the registration deadline was August 31</em>)."
+  answer: "There is no participation fee."
 
 - question: "How much do I need to know about model reduction?"
   answer: "Nothing. Basic knowledge of linear algebra and differential equations
