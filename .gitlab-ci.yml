@@ -29,7 +29,7 @@ pages:
         - make check
         - mv _site public
     only:
-      - "2020"
+      - "2020_online"
     artifacts:
         paths:
             - public
