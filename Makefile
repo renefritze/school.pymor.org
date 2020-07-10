@@ -5,13 +5,14 @@ DOCKER=$(DOCKER_CMD) run $(INTERACTIVE) --rm --label=jekyll --volume $(THIS_DIR)
 	  -p 127.0.0.1:4000:4000 jekyll/builder:stable
 
 IGNORE_HREFS=""
+CONFIG=_config.yml
 
 build: install
-	$(DOCKER) bundle exec jekyll build
+	$(DOCKER) bundle exec jekyll build --config $(CONFIG)
 
 serve: INTERACTIVE=-it
 serve: build
-	$(DOCKER) bundle exec jekyll serve --host 0.0.0.0 --livereload
+	$(DOCKER) bundle exec jekyll serve --config $(CONFIG) --host 0.0.0.0 --livereload
 
 new:
 	$(DOCKER) bundle exec jekyll new /srv/jekyll/site
