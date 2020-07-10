@@ -24,6 +24,9 @@ pages:
     extends: .docker-in-docker
     resource_group: pages
     stage: deploy
+    cache:
+      paths:
+        - .cache
     script:
         - make CONFIG="_config.yml,_config_staging.yml"  build
         - make check
