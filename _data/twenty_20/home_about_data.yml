@@ -1,14 +1,14 @@
 - inverted:
   img: icon-about.jpeg
   name: Topic
-  info: Read more about model order reduction, pyMOR, and the pyMOR School
+  info: Read more about model order reduction, pyMOR, and the pyMOR Online Course
   link: about.html
 
-- inverted: timeline-inverted
-  img: icon-agenda.jpeg
-  name: Agenda
-  info: Check out the agenda
-  link: agenda.html
+# - inverted: timeline-inverted
+#   img: icon-agenda.jpeg
+#   name: Agenda
+#   info: Check out the agenda
+#   link: agenda.html
 
 # - inverted:
 #   img: icon-team.jpeg
@@ -16,11 +16,11 @@
 #   info: Find out the team members
 #   link: /team
 
-- inverted:
-  img: icon-venue.jpeg
-  name: Venue
-  info: Learn more about our location
-  link: venue.html
+# - inverted:
+#   img: icon-venue.jpeg
+#   name: Venue
+#   info: Learn more about our location
+#   link: venue.html
 
 - inverted: timeline-inverted
   img: icon-faq.jpeg
