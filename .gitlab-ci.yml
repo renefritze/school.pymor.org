@@ -28,11 +28,12 @@ pages:
       paths:
         - .cache
     script:
-        - make CONFIG="_config.yml,_config_staging.yml"  build
         - make check
+        - make clean
+        - make CONFIG="_config.yml,_config_staging.yml"  build
         - mv _site public
     only:
-      - "2020_online"
+      - "2021"
     artifacts:
         paths:
             - public

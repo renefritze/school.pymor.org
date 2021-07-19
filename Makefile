@@ -33,4 +33,7 @@ check: build
 		--empty-alt-ignore --allow-hash-href --url-ignore $(IGNORE_HREFS) \
 		--internal_domains "school.pymor.org" --file-ignore "/past/" --check-html
 
-.PHONY: new serve build
+clean: 
+	rm -rf _site .cache .jekyll-cache
+
+.PHONY: new serve build clean
