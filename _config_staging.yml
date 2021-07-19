@@ -1,4 +1,4 @@
-baseurl: "school-website-staging"
-url: "https://pymor.zivgitlabpages.uni-muenster.de/"
+baseurl: "/school-website-staging/"
+url: "https://pymor.zivgitlabpages.uni-muenster.de/school-website-staging"
 
 logo: "css/2021_style/img/icon-large.png"
