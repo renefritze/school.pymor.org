@@ -1,0 +1,16 @@
+- question: "How much does participation cost?"
+  answer: "There is no participation fee."
+
+- question: "How much do I need to know about model reduction?"
+  answer: "Nothing. Basic knowledge of linear algebra and differential equations
+  is expected."
+
+- question: "Is the pyMOR School targeted at mathematicians or engineers?"
+  answer: "We welcome anyone interested in using model reduction."
+
+- question: "Can I work on my model reduction problem during the School?"
+  answer: "Yes, we actually encourage this."
+
+- question: "Will I be able to talk with pyMOR main developers?"
+  answer: "Yes, a few pyMOR main developers will be present during the School
+  and participate in the hands-on sessions."
