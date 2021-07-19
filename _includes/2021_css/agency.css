@@ -25,7 +25,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #{{ site.data.template.color2020.secondary-dark }};
+    color: #{{ site.data.template.color2021.secondary-dark }};
 }
 
 @media screen and (max-width : 1200px){
@@ -41,11 +41,11 @@ body {
 }
 
 .text-muted {
-    color: #{{ site.data.template.color2020.muted }};
+    color: #{{ site.data.template.color2021.muted }};
 }
 
 .text-primary {
-    color: #{{ site.data.template.color2020.primary }};
+    color: #{{ site.data.template.color2021.primary }};
 }
 
 p {
@@ -66,14 +66,14 @@ a.active {
 }
 
 a {
-    color: #{{ site.data.template.color2020.primary }};
+    color: #{{ site.data.template.color2021.primary }};
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #{{ site.data.template.color2020.secondary }};
+    color: #{{ site.data.template.color2021.secondary }};
 }
 
 h1,
@@ -110,12 +110,12 @@ aside.clients {
 }
 
 .btn-primary {
-    border-color: #{{ site.data.template.color2020.primary }};
+    border-color: #{{ site.data.template.color2021.primary }};
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
     color: #fff;
-    background-color: #{{ site.data.template.color2020.primary }};
+    background-color: #{{ site.data.template.color2021.primary }};
 }
 
 .btn-primary:hover,
@@ -123,9 +123,9 @@ aside.clients {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #{{ site.data.template.color2020.primary }};
+    border-color: #{{ site.data.template.color2021.primary }};
     color: #fff;
-    background-color: #{{ site.data.template.color2020.secondary }};
+    background-color: #{{ site.data.template.color2021.secondary }};
 }
 
 .btn-primary:active,
@@ -149,12 +149,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #{{ site.data.template.color2020.primary }};
-    background-color: #{{ site.data.template.color2020.primary }};
+    border-color: #{{ site.data.template.color2021.primary }};
+    background-color: #{{ site.data.template.color2021.primary }};
 }
 
 .btn-primary .badge {
-    color: #{{ site.data.template.color2020.primary }};
+    color: #{{ site.data.template.color2021.primary }};
     background-color: #fff;
 }
 
@@ -172,8 +172,8 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-sm, .btn-xl {
     color: #fff;
-    background-color: #{{ site.data.template.color2020.primary }};
-    border-color: #{{ site.data.template.color2020.primary }};
+    background-color: #{{ site.data.template.color2021.primary }};
+    border-color: #{{ site.data.template.color2021.primary }};
     border-radius: 3px;
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
@@ -188,9 +188,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #{{ site.data.template.color2020.primary }};
+    border-color: #{{ site.data.template.color2021.primary }};
     color: #fff;
-    background-color: #{{ site.data.template.color2020.secondary }};
+    background-color: #{{ site.data.template.color2021.secondary }};
 }
 
 .btn-sm:active,
@@ -231,13 +231,13 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #{{ site.data.template.color2020.primary }};
-    background-color: #{{ site.data.template.color2020.primary }};
+    border-color: #{{ site.data.template.color2021.primary }};
+    background-color: #{{ site.data.template.color2021.primary }};
 }
 
 .btn-sm .badge,
 .btn-xl .badge {
-    color: #{{ site.data.template.color2020.primary }};
+    color: #{{ site.data.template.color2021.primary }};
     background-color: #fff;
 }
 
@@ -248,14 +248,14 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #{{ site.data.template.color2020.primary }};
+    color: #{{ site.data.template.color2021.primary }};
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #{{ site.data.template.color2020.secondary }};
+    color: #{{ site.data.template.color2021.secondary }};
 }
 
 .navbar-default .navbar-collapse {
@@ -263,8 +263,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #{{ site.data.template.color2020.primary }};
-    background-color: #{{ site.data.template.color2020.primary }};
+    border-color: #{{ site.data.template.color2021.primary }};
+    background-color: #{{ site.data.template.color2021.primary }};
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -273,7 +273,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #{{ site.data.template.color2020.primary }};
+    background-color: #{{ site.data.template.color2021.primary }};
 }
 
 .navbar-default .nav li a {
@@ -287,19 +287,19 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #{{ site.data.template.color2020.primary }};
+    color: #{{ site.data.template.color2021.primary }};
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #{{ site.data.template.color2020.primary }};
+    background-color: #{{ site.data.template.color2021.primary }};
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #{{ site.data.template.color2020.secondary }};
+    background-color: #{{ site.data.template.color2021.secondary }};
 }
 
 @media(min-width:768px) {
@@ -339,7 +339,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/css/2020_style/img/header-bg.webp') ;
+    background-image: url('{{ site.baseurl }}/css/2021_style/img/header-bg.webp') ;
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -595,7 +595,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #{{ site.data.template.color2020.primary }};
+    background-color: #{{ site.data.template.color2021.primary }};
 }
 
 .timeline>li .timeline-image h4 {
@@ -735,7 +735,7 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url('{{ site.baseurl }}/css/2020_style/img/map-image.png');
+    background-image: url('{{ site.baseurl }}/css/2021_style/img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -762,7 +762,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: #{{ site.data.template.color2020.primary }};
+    border-color: #{{ site.data.template.color2021.primary }};
     box-shadow: none;
 }
 
@@ -845,7 +845,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #{{ site.data.template.color2020.primary }};
+    background-color: #{{ site.data.template.color2021.primary }};
 }
 
 .btn:focus,
@@ -927,7 +927,7 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #{{ site.data.template.color2020.primary }};
+    background: #{{ site.data.template.color2021.primary }};
 }
 
 ::selection {
@@ -944,5 +944,5 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #{{ site.data.template.color2020.primary }};
+    webkit-tap-highlight-color: #{{ site.data.template.color2021.primary }};
 }
