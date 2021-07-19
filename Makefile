@@ -13,7 +13,7 @@ build: install
 
 serve: INTERACTIVE=-it
 serve: build
-	$(DOCKER) bundle exec jekyll serve --config $(CONFIG) --host 0.0.0.0 --livereload
+	$(DOCKER) bundle exec jekyll serve --config $(CONFIG) --host 0.0.0.0 
 
 new:
 	$(DOCKER) bundle exec jekyll new /srv/jekyll/site
