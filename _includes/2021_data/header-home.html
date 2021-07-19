@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="/"><img src="/css/2021_style/img/home.svg" style="margin-top:-15px" width="48px" alt="icon-about"></a>
+                <a class="navbar-brand page-scroll" href="/"><img src="{{ 'css/2021_style/img/home.svg' | relative_url}}" style="margin-top:-15px" width="48px" alt="icon-about"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -42,4 +42,3 @@
           {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
         {% endfor %}
  -->
-
