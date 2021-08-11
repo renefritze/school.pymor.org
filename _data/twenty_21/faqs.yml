@@ -3,7 +3,7 @@
 
 - question: "How much do I need to know about model reduction?"
   answer: "Nothing. Basic knowledge of linear algebra and differential equations
-  is expected."
+  is expected, however."
 
 - question: "Is the pyMOR School targeted at mathematicians or engineers?"
   answer: "We welcome anyone interested in using model reduction."

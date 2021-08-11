@@ -13,14 +13,14 @@ title: About
 
       <p>
           The numerical simulation of mathematical models described by partial differential
-          equations (PDEs) is nowadays an important tool for research in almost every scientific
-          discipline. Yet, the use of such models is often limited by the available computational
-          resources.
+          equations (PDEs) or large systems of ordinary differential equations (ODEs) is nowadays an
+	  important tool for research in almost every scientific discipline. Yet, the use of such
+	  models is often limited by the available computational resources.
       </p>
 
       <p>
           Over the last decade, a variety of algorithms have been developed which compute, for a
-          given numerical PDE model, a mathematically certified surrogate that can be simulated in a
+          given numerical ODE/PDE model, a mathematically certified surrogate that can be simulated in a
           small fraction of the time required for the solution of the original model. These
           techniques, known as model order reduction (MOR), are now becoming an integral part in
           many simulation workflows which otherwise would be infeasible, even on the largest
@@ -28,7 +28,7 @@ title: About
       </p>
 
       <p>
-          See <a href="https://morwiki.mpi-magdeburg.mpg.de/morwiki">MOR Wiki</a> for more
+          See the <a href="https://morwiki.mpi-magdeburg.mpg.de/morwiki">MOR Wiki</a> for more
           information.
       </p>
 
@@ -51,31 +51,40 @@ title: About
             methods are:
         </p>
         <ul>
-            <li>proper orthogonal decomposition (POD),</li>
-            <li>discrete empirical interpolation method (DEIM),</li>
+	    <li>Greedy basis generation,</li>
+            <li>Proper Orthogonal Decomposition (POD),</li>
+            <li>Discrete Empirical Interpolation Method (DEIM),</li>
             <li>POD-Greedy,</li>
-            <li>balanced truncation,</li>
-            <li>iterative rational Krylov algorithm (IRKA).</li>
+            <li>Balanced Truncation,</li>
+            <li>Iterative Rational Krylov Algorithm (IRKA),
+	    <li>models based on artificial neural networks.</li>
         </ul>
         <p>
-            With pyMOR, it is possible to link to partial differential equations
-            (PDE) solver packages. Currently, there is support for deal.II,
-            DUNE, FEniCS, and NGSolve. Custom (domain specific) solvers can be
+ 	    All algorithms in pyMOR are formulated in terms of abstract interfaces for seamless
+	    integration with external PDE solver packages.
+	    Currently, there is support for <a href="https://dealii.org">deal.II</a>,
+  	    <a href="https://dune-project.org">DUNE</a>, <a href="http://fenicsproject.org">FEniCS</a>, 
+	    and <a href="https://ngsolve.org">NGSolve</a>. Custom (domain specific) solvers can be
             easily integrated with pyMOR.
+	    Moreover, pure Python implementations of FEM (Finite Element Method) and FVM
+	    (Finite Volume Method) discretizations using the
+	    <a href="https://scipy.org/">NumPy/SciPy</a> scientific computing 
+  	    stack are provided for getting started quickly.
         </p>
     </section>
 
     <section id="school" class="black-frame about about-container about-container-bottom">
       <h1>pyMOR School</h1>
       <p>
-          The pyMOR School is the third event for current and future pyMOR users. It will take
-          place at the Seminarraumzentrum WWU Münster from Monday noon (October 4th) to Friday noon (October 8th).
+          The pyMOR School is the third event for current and future pyMOR users and developers. It will take
+	place at the <a href="/venue.html">Seminarraumzentrum WWU Münster</a> from Monday noon (October 4th) to Friday noon (October 8th).
       </p>
 
       <p>
-          The School will consist of introductory lectures on MOR methods available in pyMOR and
-          programming sessions where participants will be able to use pyMOR for their own projects
-          with the help of pyMOR developers.
+          The School will consist of introductory lectures on the MOR methods available in pyMOR
+	  combined with interactive pyMOR tutorial and exercise sessions. Further,
+          participants are encouraged to bring their own projects to work on during the school
+          with the support of the pyMOR developers.
       </p>
 
       <p>
@@ -95,7 +104,21 @@ title: About
       </p><p>
         For people who can only join virtually
         the lectures will be live-streamed, with questions through a live chat.
-        Participation in the hands on sessions, meaning tutorials and help from pyMOR developers with
-        your own code, will only be possible in person however.
+        Participation in the coding/exercise sessions, will only be possible in person however.
       </p>
     </section>
+
+    <section id="organizers" class="black-frame about about-container about-container-bottom">
+      <h1>Organizers</h1>
+      <p>
+          The pyMOR School 2021 is organized by:
+          <ul>
+    	  <li>Linus Balicki (Virginia Tech)
+          <li>René Fritze (WWU Münster)
+          <li>Petar Mlinaric (Virginia Tech) 
+          <li>Stephan Rave (WWU Münster)
+          <li>Jens Saak (MPI Magdeburg)
+          </ul>
+      </p>
+    </section>
+
