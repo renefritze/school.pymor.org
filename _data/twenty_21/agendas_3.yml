@@ -1,0 +1,24 @@
+- time: 09:00 - 09:30
+  info: "pyMOR Contribution Workflow<br><b>Petar Mlinarić</b>"
+
+- time: 09:30 - 10:00
+  info: "JupyterHub<br><b>Adrian Brömmelsiek</b>"
+
+- time: 10:00 - 10:30
+  info: "Using pyMOR for Reduced Basis PDE-Constrained Optimization<br><b>Tim
+        Keil</b>"
+
+- time: 10:30 - 11:00
+  info: "Coffee break"
+
+- time: 11:00 - 12:30
+  info: "Interactive session"
+
+- time: 12:30 - 14:00
+  info: "Lunch break"
+
+- time: 14:00 - 17:00
+  info: "Interactive session"
+
+- time: 17:00 -
+  info: "BBQ"

@@ -1,0 +1,23 @@
+- time: 09:00 - 10:30
+  info: "System-Theoretic Methods (1/2)<br><b>Prof. Dr. Peter Benner</b>"
+
+- time: 10:30 - 11:00
+  info: "Coffee break"
+
+- time: 11:00 - 12:30
+  info: "System-Theoretic Methods (2/2)<br><b>Prof. Dr. Peter Benner</b>"
+
+- time: 12:30 - 14:00
+  info: "Lunch break"
+
+- time: 14:00 - 15:00
+  info: "Reduced Basis Methods (2/2)<br><b>Dr. Stephan Rave</b>"
+
+- time: 15:00 - 15:30
+  info: "Integration with External PDE Solver Packages<br><b>René Fritze</b>"
+
+- time: 15:30 - 16:00
+  info: "Coffee break"
+
+- time: 16:00 - 19:00
+  info: "Interactive session"

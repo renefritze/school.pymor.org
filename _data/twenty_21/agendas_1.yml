@@ -1,0 +1,20 @@
+- time: 14:00 - 14:10
+  info: "Welcome address"
+
+- time: 14:10 - 15:00
+  info: "Introductions<br><b>pyMOR School participants</b>"
+
+- time: 15:00 - 16:30
+  info: "Reduced Basis Methods (1/2)<br><b>Dr. Stephan Rave</b>"
+
+- time: 16:30 - 17:00
+  info: "Coffee break"
+
+- time: 17:00 - 19:00
+  info: "Interactive session"
+
+- time: 19:00 -
+  info: "Get-together"
+
+# - time: 12:00 PM - 3:00 PM
+#   info: "<u>Title</u><br><b>Name</b><br><i>Position</i><br><br>Topic"
