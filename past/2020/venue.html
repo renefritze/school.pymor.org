@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+  <style type="text/css">
+    /*INCLUDE MAIN CSS FILE*/
+    
+    .black-frame { overflow: hidden; background: white; box-sizing: border-box; padding: 5%; margin: 2em auto; border: 1px solid #eee; }
+
+.venue-top { padding-top: 50px; }
+
+.venue-map iframe { height: 60vh; width: 100%; }
+
+.icon-about img { display: block; margin: 0 auto; width: 70%; margin-top: 15px; }
+
+@media screen and (max-width: 760px) { .venue-map iframe { height: 45vh; } }
+
+.page-not-found h1 { padding-top: 30vh; font-size: 180%; }
+
+.page-not-found p { font-size: 120%; }
+
+.page-not-found h1, .page-not-found h2, .page-not-found h3, .page-not-found p { text-align: center; }
+
+.agenda { table-layout: fixed; width: 100%; white-space: pre-wrap; word-wrap: break-word; /* Column widths are based on these cells */ }
+
+.agenda td { white-space: pre-wrap; word-wrap: break-word; text-overflow: ellipsis; }
+
+.agenda .agenda-time { width: 40%; }
+
+.agenda .agenda-actiity { width: 60%; }
+
+.agenda th, .agenda td { border: 1px solid #00283c; font-size: 120%; }
+
+.agenda th { background: #00283c; color: white; letter-spacing: 1px; }
+
+.agenda td { text-align: center; font-size: 110%; }
+
+.agenda td a { color: #ff6738; text-decoration: none; }
+
+.agenda td b { color: #ff6738; }
+
+.agenda td + td { text-align: left; padding-left: 10px; }
+
+@media screen and (max-width: 760px) { .agenda .agenda-time { width: 40%; } .agenda .agenda-actiity { width: 60%; } .agenda td, .agenda th { font-size: 100%; } .agenda td { padding-left: 0px; } .agenda td + td { padding-left: 10px; } }
+
+h1.team-h1 { position: relative; text-align: center; text-shadow: 2px 2px black; background-color: #af0078; color: white; padding: 10px; width: 100%; }
+
+.cf:before, .cf:after { content: " "; /* 1 */ display: table; /* 2 */ }
+
+.cf:after { clear: both; }
+
+/** For IE 6/7 only Include this rule to trigger hasLayout and contain floats. */
+.cf { *zoom: 1; }
+
+.padding-team { padding: 5%; }
+
+.team-container { max-width: 1200px; margin: 30px auto 30px auto; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; }
+
+.team-container *, .team-container *:before, .team-container *:after { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
+
+.team-container-top { margin-top: 100px; }
+
+.team-container-bottom { margin-bottom: 60px; }
+
+.team-member { padding: 10px 20px 10px 20px; width: 16%; text-align: center; float: left; }
+
+.team-member:last-child { margin-right: 0; }
+
+.team-member span, .team-member h3 { font-family: sans-serif; letter-spacing: -1px; }
+
+.team-member h3 { color: SlateGray; margin: 5px 0px 0px 0px; }
+
+.email { color: #ff805b; }
+
+.team-member span { display: block; padding: 5px 0px 0px 0px; }
+
+.team-photo { border-radius: 50%; text-align: center; margin: auto; max-width: 100%; height: auto; transition: 0.1s transform ease-in-out; }
+
+.team-photo:hover { transform: scale(0.9); cursor: pointer; }
+
+@media (max-width: 1300px) { .team-container { max-width: 850px; } }
+
+@media (max-width: 1000px) { .team-container { max-width: 700px; } }
+
+/* code for phone layout */
+@media (max-width: 760px) { .team-member { padding: 0; float: none; display: block; margin: 20px auto; width: 100%; text-align: center; } .team-container { margin: 50px 10px 10px 10px; } }
+
+.event { padding: 5%; margin: 100px 15vw 60px 15vw; }
+
+.event img { width: 100%; }
+
+.event a { color: darkblue; }
+
+.event h2, .event h3, .event ol, .event p { color: black; text-align: left; }
+
+.event p, .event ol { font-size: 110%; }
+
+.event h1 { margin: 0; text-shadow: 2px 2px black; background-color: #af0078; color: white; padding: 5px 5px 5px 10px; -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%); clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%); width: 90%; }
+
+@media screen and (max-width: 1200px) { .event { margin: 100px 15vw 60px 15vw; } }
+
+@media screen and (max-width: 760px) { .venue-map iframe { height: 45vh; } .event { margin: 80px 10px 10px 10px; } h1 { font-size: 130%; } h2 { font-size: 120%; } p, ol, li { font-size: 100%; } }
+
+.about { padding: 5%; margin: 30px 15vw 30px 15vw; }
+
+.about img { max-width: 500px; }
+
+.about h1 { text-shadow: 2px 2px black; background-color: #af0078; color: white; padding: 5px 5px 5px 10px; -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%); clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%); width: 90%; }
+
+.about h2 { text-shadow: 2px 2px black; background-color: #009dd1; color: white; padding: 5px 5px 5px 10px; -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%); clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%); }
+
+.about h2.first { width: 190px; }
+
+.about h2.second { width: 170px; }
+
+.about h2.third { width: 150px; }
+
+.about-container-top { margin-top: 100px; }
+
+.about-container-bottom { margin-bottom: 60px; }
+
+@media screen and (max-width: 1200px) { .about { margin: 20px 10vw 20px 10vw; } .about-container-top { margin-top: 100px; } .about-container-bottom { margin-bottom: 80px; } }
+
+@media screen and (max-width: 760px) { .about { margin: 10px 10px 10px 10px; } .about-container-top { margin-top: 80px; } h1 { font-size: 130%; } h2 { font-size: 120%; } p, ol, li { font-size: 100%; } }
+
+/*form for contact me */
+.contact form { background-color: rgba(255, 255, 255, 0.9); max-width: 600px; margin: auto auto 50px auto; box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3); padding: 15px; margin-top: 140px; }
+
+.contact input, .contact textarea { font-size: 110%; display: block; border: 1px solid #cccccc; padding: 10px; margin-bottom: 5px; resize: none; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; }
+
+.contact h3 { color: darkslategrey; }
+
+.contact a { color: darkcyan; }
+
+@media screen and (max-width: 1200px) { .contact .more-top-body { margin-top: 100px; } }
+
+@media screen and (max-width: 760px) { .contact form { margin: 50px 5% 50px 5%; } }
+
+  </style>
+  
+  <!-- jQuery Version 1.11.0 -->
+<script src="/css/2020_style/js/jquery-1.11.0.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/css/2020_style/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/css/2020_style/js/jquery.easing.min.js"></script>
+<script src="/css/2020_style/js/classie.js"></script>
+<script src="/css/2020_style/js/cbpAnimatedHeader.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/css/2020_style/js/agency.js"></script>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Venue</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Model Order Reduction with Python
+">
+    <link rel="canonical" href="https://school.pymor.org/past/2020/venue.html">
+
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Venue | pyMOR School</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Venue" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Model Order Reduction with Python" />
+<meta property="og:description" content="Model Order Reduction with Python" />
+<link rel="canonical" href="https://school.pymor.org/past/2020/venue.html" />
+<meta property="og:url" content="https://school.pymor.org/past/2020/venue.html" />
+<meta property="og:site_name" content="pyMOR School" />
+<meta name="google-site-verification" content="googleXXXXXXXXXXXXXXXX.html" />
+<script type="application/ld+json">
+{"description":"Model Order Reduction with Python","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://school.pymor.org/css/2021_style/img/icon-large.png"}},"url":"https://school.pymor.org/past/2020/venue.html","headline":"Venue","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/css/2020_style/style.css">
+
+    <!--Remove image dragging -->
+    <BODY ondragstart="return false;" ondrop="return false;">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/css/2020_style/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- WEBSITE ICON IN BROWSER -->
+    <link rel="icon" type="image/png" href="/css/2020_style/img/icon.png">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="/"><img src="/css/2020_style/img/home.svg" style="margin-top:-15px" width="48px" alt="icon-about"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="/"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#intro">Details</a>
+                    </li>
+<!--                    <li>
+                        <a class="page-scroll" href="../#speakers">Speakers</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../#contact">Contact</a>
+                    </li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+<!--
+        
+          
+        
+          <a class="page-link" href="/past/2020/about.html">About</a>
+        
+          <a class="page-link" href="/about.html">About</a>
+        
+          <a class="page-link" href="/past/2019/about">About</a>
+        
+          <a class="page-link" href="/agenda.html">Agenda</a>
+        
+          <a class="page-link" href="/past/2019/agenda">Agenda</a>
+        
+          <a class="page-link" href="/past/2020/agenda.html">Agenda</a>
+        
+          <a class="page-link" href="/faqs.html">Frequently Asked Questions (FAQ)</a>
+        
+          <a class="page-link" href="/past/2020/faqs.html">Frequently Asked Questions (FAQ)</a>
+        
+          <a class="page-link" href="/past/2019/faqs">Frequently Asked Questions (FAQ)</a>
+        
+          
+        
+          
+        
+          
+        
+          <a class="page-link" href="/register.html">Registration</a>
+        
+          <a class="page-link" href="/past/2019/register.html">Registration</a>
+        
+          <a class="page-link" href="/past/2020/register.html">Registration</a>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          <a class="page-link" href="/past/2019/team">Team Member</a>
+        
+          <a class="page-link" href="/venue.html">Venue and Accomodation</a>
+        
+          <a class="page-link" href="/past/2019/venue">Venue</a>
+        
+          <a class="page-link" href="/past/2020/venue.html">Venue</a>
+        
+          
+        
+ -->
+
+            <!--background color-->
+    <script type="text/javascript">
+        document.write ('<body style="background: Gainsboro; background-attachment: fixed;">')
+    </script>
+
+    <div class="event black-frame">
+      <h1>Venue</h1>
+
+      <div class="venue-map">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d612.78381615141!2d7.603409268371085!3d51.966333774674574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9baa2ba5dce43%3A0xcfca2e5571345c4a!2sSeminarraumzentrum%20WWU%20M%C3%BCnster!5e0!3m2!1sen!2sde!4v1581431372294!5m2!1sen!2sde"
+              frameborder="0" style="border:0"
+              allowfullscreen>
+          </iframe>
+      </div>
+
+      <h2>Address</h2>
+      <p>
+          <address>
+              Seminarraumzentrum WWU Münster<br/>
+              Orléans-Ring 12<br/>
+              48149 Münster<br/>
+              Germany
+          </address>
+      </p>
+
+      <h2>Directions</h2>
+      <h3>By plane</h3>
+        <p>The <a href="https://www.dus.com/en" class="ext" target="_blank">Airport Düsseldorf </a>is  the nearest
+          airport equipped with an  international transport network.  You can reach Münster from airport by  train in
+           about 90 minutes. For  more details see the Travel Service of
+           <a href="https://www.bahn.com/en/view/index.shtml" class="int">"Deutsche Bahn"</a>. Alternatively,
+           the <a href="https://www.fmo.de/en/" class="ext" target="_blank">Airport Münster-Osnabrück</a>, which has  a significantly smaller transport system, is located about 30 km
+           in the  north of Münster.</p>
+        <ul>
+          <li><strong>Airport Münster-Osnabrück --&gt; Münster (Westf.) Central Station</strong><br />
+          The <a href="https://www.fmo.de/en/" class="ext" target="_blank">Airport Münster-Osnabrück</a> is located
+          about 30 km north of Münster and offers daily scheduled flights to various destinations within Germany and
+          Europe. The airport offers a shuttle service to Münster's main railway station which runs approximately every
+           30 minutes. You can buy a ticket on the bus for about 5 Euro. The journey takes about 35 minutes.</li>
+          <li><strong>Dortmund Airport --&gt; Münster (Westf.) Central Station</strong><br />
+          There is a regional train that runs from Dortmund airport (Holzwickede station) to Münster main station. The
+          station in Dortmund-Holzwickede can be reached by a shuttle bus from the airport within 5 minutes. The complete
+          journey takes between 1 - 1.5 hours.</li>
+          <li><strong>Düsseldorf Airport --&gt; Münster (Westf.) Central Station</strong><br />
+          The nearest airport with a good international route network is Düsseldorf Airport.<br />
+          There is a direct train from Düsseldorf to Münster on platform 5. This takes just under 1.5 hours.</li>
+          <li><strong>Cologne/Bonn Airport --&gt; Münster (West) Central Station</strong><br />
+          When you arrive at Cologne/Bonn Airport, you have to change trains once. Either at Cologne Central Station,
+           Cologne Deutz Station or Essen Central Station. The whole journey takes about 2.5 hours.</li>
+          <li><strong>Frankfurt Airport --&gt; Münster (West) Central Station</strong><br />
+          To get from Frankfurt Airport to Münster, you can take a direct train from platform FERN 7. The journey takes
+          about 3.5 hours.<br />
+          Alternatively, you can also travel via Dortmund and change trains there. In this case you leave from platform
+          FERN 6 and need about 2.5 hours for the whole journey.</li>
+        </ul>
+
+      <h3>By public transport</h3>
+        <p>Münster is well connected by train and bus. See the website of
+            <a href="https://www.bahn.com/en/view/index.shtml" class="ext" target="_blank">"Deutsche Bahn" </a>
+            for more travel details.
+        </p>
+          <p>Several bus lines lead from Münster railway station to the department building. It is best to take the
+            bus lines 5, 11, 12, 22 in the direction of Gievenbeck or Nienberge. Get off at bus stop
+            "<strong>Coesfelder Kreuz</strong>" after about 15 minutes.</p>
+          <p>To get to the Seminarraumzentrum, cross the street with traffic lights. Make a left right after the
+            crossing, walk straight till you turn right onto a parking lot. The entrace is on the far side of the
+            building.
+          <p>As an alternative, take a taxi from the main station to the  Seminarraumzentrum at "Orléans-Ring 12".</p>
+
+      <h3>By car</h3>
+      <p><strong>Coming from the south</strong>, take the motorway A1 or A43 north. If on  A1,  change to A43 at the
+        motorway interchange Münster South, direction   Münster. When the motorway ends by the traffic lights go ahead
+        for   another 500 meters, then turn left following the signs to   "Universitätsklinik" (university hospital).
+        Follow this road over a   bridge and several traffic lights. At the crossing where the road signs   leading to
+        the hospital point left, go straight ahead (there should be a   big concrete car park to your left) - the
+         Seminarraumzentrum is now already on   your right side, take the entrance to the Seminarraumzentrum's parking
+         after   about 20 meters. Attention - this can be easily overlooked! If so just   U-turn twice.</p>
+      <p><strong>From North:</strong> Take A1 direction South. At exit Münster North,  leave  A1, direction Münster.
+        You are now on B54 heading Münster, follow   instructions from West below.</p>
+      <p><strong>From West (Netherlands)</strong>: If you want to avoid taking the  northern  motorways, take the B54
+         into Münster (from Enschede). Pass the  motorway  entrance and drive right into town. At the first major
+         crossing  with  traffic lights in Münster there is a sign to "Coesfeld", pointing   right. Follow it. At the
+         second traffic light, there is a parking block   on your right. Take an U-Turn and go right after 20 meters
+         into the   entrance of the Seminarraumzentrum.</p>
+      <p></p>
+      <p>The <strong>parking space</strong> of the department is reserved for members  of the   WWU. Respect the
+         parking signs and recall that in Münster cars  are   towed rigorously. If you stay longer we advise you to
+         take the free    parking deck over the road.</p>
+      <p>If you would like to travel by car into the city you need to have a certified vehicle with a
+         <a href="https://urbanaccessregulations.eu/countries-mainmenu-147/germany-mainmenu-61/munster"
+          class="ext" target="_blank"><strong>emission sticker</strong></a>. The penalty for driving in a low emission
+          zone in Germany without the sticker required is 80 € plus an administrative fee. Buy stickers only from the
+           official city or TÜV websites. Other websites are often much more expensive, if they provide you with a
+           valid sticker at all.</p>
+
+
+      <!-- <h2>Accomodation</h2>
+      <p>
+          TBA
+      </p>
+
+      <p>
+          Here are some hotel/hostel options in Münster:
+          <ul>
+              <li>
+                  <a href="https://magdeburg.jugendherberge.de/">
+                      Jugendherberge Magdeburg
+                  </a>
+                  <ul>
+                      <li>Leiterstraße 10, 39104 Magdeburg</li>
+                      <li>~24.00 €/night</li>
+                      <li>
+                          2.2 km to MPI Magdeburg, 11 minutes with tram 5 from
+                          station Leiterstraße to Askanischer Platz (in
+                          direction Messegelände/Elbauenpark)
+                      </li>
+                      <li>
+                          <a href="https://goo.gl/maps/28f7th3UMDR2">
+                              Google maps route
+                          </a>
+                      </li>
+                  </ul>
+              </li> 
+          </ul>
+      </p> -->
+    </div>
+
+  </body>
+  <style>
+body {
+  position: absolute;
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+</style>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <span class="copyright">© 2021 <a href="https://github.com/melvinchng/event-jekyll-theme">Event Jekyll Theme</a> by <a href="http://melvinchng.github.io">Melvin Ch'ng</a>,<br>All Rights Reserved.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
