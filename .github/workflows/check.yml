@@ -1,0 +1,22 @@
+name: Build and Check
+
+on:
+  push:
+    branches-ignore:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      - name: Install 🏗
+        run: make install VERBOSE=1
+
+      - name: Build 🔧
+        run: make build VERBOSE=1
+
+      - name: Check 🕵️‍♀️
+        run: make check VERBOSE=1

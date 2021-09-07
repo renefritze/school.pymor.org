@@ -9,11 +9,11 @@ IGNORE_HREFS=""
 CONFIG=_config.yml
 
 build: install
-	$(DOCKER) bundle exec jekyll build --config $(CONFIG)
+	$(DOCKER) bundle exec jekyll build --trace --config $(CONFIG)
 
 serve: INTERACTIVE=-it
 serve: build
-	$(DOCKER) bundle exec jekyll serve --config $(CONFIG) --host 0.0.0.0 
+	$(DOCKER) bundle exec jekyll serve --config $(CONFIG) --host 0.0.0.0
 
 new:
 	$(DOCKER) bundle exec jekyll new /srv/jekyll/site
@@ -33,7 +33,7 @@ check: build
 		--empty-alt-ignore --allow-hash-href --url-ignore $(IGNORE_HREFS) \
 		--internal_domains "school.pymor.org" --file-ignore "/past/" --check-html
 
-clean: 
+clean:
 	rm -rf _site .cache .jekyll-cache
 
 .PHONY: new serve build clean

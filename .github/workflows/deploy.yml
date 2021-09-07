@@ -1,0 +1,28 @@
+name: Build, Check and Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      - name: Install 🏗
+        run: make install VERBOSE=1
+
+      - name: Build 🔧
+        run: make build VERBOSE=1
+
+      - name: Check 🕵️‍♀️
+        run: make check VERBOSE=1
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: _site # The folder the action should deploy.
