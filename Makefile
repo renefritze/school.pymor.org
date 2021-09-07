@@ -2,7 +2,7 @@ JEKYLL_VERSION=3.8
 THIS_DIR = $(patsubst %/,%,$(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
 DOCKER_CMD=docker
 DOCKER=$(DOCKER_CMD) run $(INTERACTIVE) --rm --label=jekyll --volume $(THIS_DIR):/srv/jekyll \
- 		-v $(THIS_DIR)/.cache:/usr/local/bundle \
+ 		-v $(THIS_DIR)/.cache/bundle:/usr/local/bundle \
 	  -p 127.0.0.1:4000:4000 jekyll/builder:${JEKYLL_VERSION}
 
 IGNORE_HREFS=""
